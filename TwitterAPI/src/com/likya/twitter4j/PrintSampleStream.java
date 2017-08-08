@@ -16,10 +16,6 @@
 
 package com.likya.twitter4j;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Properties;
-
 import twitter4j.FilterQuery;
 import twitter4j.StallWarning;
 import twitter4j.Status;
@@ -103,7 +99,7 @@ public final class PrintSampleStream {
 
 		// query.track("cnn");
 		// query.track("DemetAkalin");
-		query.track("@serkan_tas", "@trt");
+		query.track("@trt");
 		twitterStream.filter(query);
 	}
 }
