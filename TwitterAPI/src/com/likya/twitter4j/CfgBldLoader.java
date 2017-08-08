@@ -12,7 +12,7 @@ public class CfgBldLoader {
 		Properties properties = new Properties();
 		try {
 			properties.load(
-					new FileInputStream("/Users/serkan/dev/git/sharedprojects/TwitterAPI/privateFile.properties"));
+					new FileInputStream("/privateFile.properties"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
