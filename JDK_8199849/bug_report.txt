@@ -1,0 +1,60 @@
+﻿Execution 	: Command line
+Browser 	: ie
+class		: jdk native
+user/pass	: pınara/pınara
+result		: can login
+console log	: 
+			BugReport_JDK_8199849: username pınara Encoding => Cp1254
+			BugReport_JDK_8199849: password pınara Encoding => Cp1254
+
+******************************************************************************
+Execution 	: Command line
+Browser 	: chrome
+class		: jdk native
+user/pass	: pınara/pınara
+result		: can not login
+console log	: 
+			BugReport_JDK_8199849: username pÄ±nara Encoding => Cp1254
+			BugReport_JDK_8199849: password pÄ±nara Encoding => Cp1254
+
+******************************************************************************
+Execution 	: Command line
+Browser 	: firefox
+class		: jdk native
+user/pass	: pınara/pınara
+result		: can not login
+console log	: 
+			BugReport_JDK_8199849: username pÄ±nara Encoding => Cp1254
+			BugReport_JDK_8199849: password pÄ±nara Encoding => Cp1254
+
+////////////////////////////////////////////////////////////////////////////////////
+
+Execution 	: Command line
+Browser 	: ie
+class		: modified
+user/pass	: pınara/pınara
+result		: can NOT login
+console log	: 
+
+			BugReport_JDK_8199849: username p?nara Encoding => Cp1254
+			BugReport_JDK_8199849: password p?nara Encoding => Cp1254
+
+******************************************************************************
+Execution 	: Command line
+Browser 	: chrome
+class		: modified
+user/pass	: pınara/pınara
+result		: can login
+console log	: 
+			BugReport_JDK_8199849: username pınara Encoding => Cp1254
+			BugReport_JDK_8199849: password pınara Encoding => Cp1254
+
+******************************************************************************
+Execution 	: Command line
+Browser 	: firefox
+class		: modified
+user/pass	: pınara/pınara
+result		: can login
+console log	: 
+			BugReport_JDK_8199849: username pınara Encoding => Cp1254
+			BugReport_JDK_8199849: password pınara Encoding => Cp1254
